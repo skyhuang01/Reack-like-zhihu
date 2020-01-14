@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/skyhuang01/Reack-like-zhihu.git).
 
-## Available Scripts
+### 初始化npm bower
 
-In the project directory, you can run:
+cd Reack-like-zhihu
 
-### `npm start`
+```javascript
+npm init  //一直enter，默认就好
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+bower init //同上
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```
 
-### `npm test`
+### 安装必要的开发工具包
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- gulp ：基于流的自动化构建工具
+- gulp-browserify ：前端模块及依赖管理
+- gulp-concat ：文件合并插件
+- gulp-react ：JSX语法转化工具
+- gulp-connect ：构建本地开发Web服务器
+- lodash ：一个具有一致接口、模块化、高性能等特性的 JavaScript 工具库
+- reactify ：React 编译器
 
-### `npm run build`
+```javascript
+npm install gulp gulp-browserify gulp-concat gulp-react gulp-connect lodash reactify --save-dev
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 安装生产环境依赖包
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- react ：主要框架
+- react-dom ：React的DOM操作类
+- bootstrap ：bootstrap样式
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```javascript
+npm install --save react react-dom
 
-### `npm run eject`
+bower install --save bootstrap
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `run repo`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+$ gulp server-pro   //用浏览器打开 localhost:5001
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
